@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(177, 173, 255);
+}
+
+p {
+  font-family: "Sofia", sans-serif;
+  background: black;
+  border: 10px solid rgb(170, 15, 237);
+  outline: 2px solid white;
+  color: white;
+  text-align: center;
+}
+
+img {
+    border: 3px solid white;
+}
+
+.bild {
+    position: relative;
+}
+
+.bazinga {
+    position: absolute;
+    top: 12px;
+    left: 12%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    transition: transform 0.3s;
+}
+
+.bild img {
+    width: 100%;
+    border: 3px solid white;
+    transition: 0.3s;
+}
+
+.bild img:hover {
+    transform: scale(1.04);
+}
+
+.bild img:hover + .bazinga {
+    transform: translateY(-7px) scale(1.15);
+}
+
+h1, h2 {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+li {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+ol {
+    margin-left: -20px;
+}
+
+ol {
+    padding-left: 35px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.build {
+    width: 580px;
+    margin-left: 10px;
+}
+
+.build img {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bazinga {
+    transition: transform 0.3s ease;
+}
+
+.build:hover .bazinga {
+    transform: translateY(-7px) scale(1.15);
+}
