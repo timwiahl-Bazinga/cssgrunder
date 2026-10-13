@@ -4,30 +4,42 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  <title>Lektion 12 - External CSS</title>
+  <title>Lektion 12 - BSS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <script>
-  setTimeout(() => location.reload(), 5000)
+  setTimeout(() => location.reload(), 25000)
 </script>
 
 <body>
-  <h1>Lektion 12 - External css</h1>
-  <h2>Dagens upplägg</h2>
-  <p>TODO: Skapa en webbplats för motiverande inlägg.</p>
-  <p>Style den hur du vill men den måste ha följande :</p>
+  <h1>Sheldon Lee Cooper
+  <h2>Bazinga</h2>
+  <p>Vad är Bazinga.</p>
+  <p>I love Sheldon Cooper</p>
   <ol>
-    <li>Huvudtexten i h1 bör använda Regular Libre Baskerville Font från Google Fonts:</li> 
-    <li>Texten ska vara vit och bakgrunden svart. 
-    <li>Lägg till din egen bild i mappen images. Den ska ha en 5px vit kant.<a href="https://www.w3schools.com/css/css_border.asp">W3Schools ang border</a></li> 
-    <li>Texten ska vara mittjusterad.</li> 
-    <li>Skapa en div som innehåller elementen h1, p och img. Justera marginalerna så att bilden och texten centreras på sidan.<br>
-    Tips: Du centrerar en div horisontellt genom att ge den en bredd på 50 % och en vänstermarginal på 25 %.<br>
-    Tips: Ställ in bilden så att den har en bredd på 100 % så att den fyller div.</li> 
-    <li>Läs om css egenskapen text-transform</li>
+    <li>Du ska göra han glad</li>    
+    <li>Genom att ge han din spot
+    <li>Detta ska du kolla på om du är sjuk <a href="       file:///C:/Users/tim.wiahl/Downloads/Penny%20sings%20Soft%20Kitty%20again%20for%20Sheldon%20(1).mp4">Soft Kitty Warm Kitty</a></li> 
+    <li>Du kommer må bra direkt igen</li> 
   </ol>
   <br>
 
-  <div style="margin-left:10%"><img src="images/encouraging-memes-2.jpg" alt="encuraging dog"style="width:30%">	
+<div class="bild">
+  <div style="margin-left:0%">
+    
+    <img src="images/Sheldon Cooper.jpg"
+         alt="Sheldon Cooper"
+         style="width:35%"
+         onclick="document.getElementById('bazingaLjud').currentTime=0; document.getElementById('bazingaLjud').play()">
+
+    <div class="bazinga">BAZINGA!</div>
+
+    <audio id="bazingaLjud">
+      <source src="Bazinga.mp3" type="audio/mpeg">
+    </audio>
+
+  </div>
+</div>
 </body>
 </html>
